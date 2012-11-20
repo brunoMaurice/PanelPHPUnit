@@ -8,7 +8,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	    <title>Phpunit</title>
+	    <title>Panel Phpunit</title>
 
 	    <link rel="stylesheet" href="public/css/base.css" type="text/css" media="all">
 	</head>
@@ -26,11 +26,7 @@
 		    <span class="progress" style="width: 0%;"></span>
 		</div>
 		<pre id="phpunit">
-			<?php
-				$file = file_get_contents('C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\loyerexpress\trunk\tests\log.txt');
 
-				print $file;
-			?>
 		</pre>
 
 		<script src="public/js/jquery.js"></script>
