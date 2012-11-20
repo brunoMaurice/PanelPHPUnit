@@ -1,14 +1,4 @@
 <?php
-
-//$type = (isset($_GET['type'])) ? $_GET['type'] : 'phpunit';
-
-/*exec('phpunit -c "C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\loyerexpress\trunk\tests\\'.$type.'.xml" > "C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\loyerexpress\trunk\tests\log.txt"');
-
-$file = file_get_contents('C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\loyerexpress\trunk\tests\log.txt');
-
-print $file;*/
-
-
 if (isset($_GET['project'])) {
 	$projectName = $_GET['project'];
 
@@ -33,7 +23,6 @@ if (isset($_GET['project'])) {
 				$unitConfXml
 			);
 
-			 // We need to temporarily turn off html_errors to ensure correct parsing of test debug output
 			$html_errors = ini_get('html_errors');
 
 			ob_start();
@@ -55,4 +44,3 @@ if (isset($_GET['project'])) {
 		sprintf('Project %s not found', $projectName);
 	}
 }
-?>
